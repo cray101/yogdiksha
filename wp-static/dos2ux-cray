@@ -1,0 +1,4 @@
+#!/bin/sh
+find wpyogdiksha-nov2013/ -name "index.html" | xargs perl -pi -e 's/\r\n/\n/;' $*
+
+
