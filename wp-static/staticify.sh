@@ -1,11 +1,16 @@
 #!/bin/sh
 
 #backup generated zipfile to legacy
-cp ~/Dropbox/WebDev/sites/wpyogdiksha-nov2013/wordpress/wp-content/uploads/2015/05/wp-static*.zip legacy/
+if [ ! -d "legacy" ]; then
+    mkdir ./legacy
+fi
 
-#move working copy to this folder
 #!!! update to current month!!!
-mv ~/Dropbox/WebDev/sites/wpyogdiksha-nov2013/wordpress/wp-content/uploads/2015/05/wp-static*.zip ./wp-static-latest.zip
+find ../wpyogdiksha-nov2013/wordpress/wp-content/uploads -name "wp-static*" -exec mv {} ./legacy \;
+# make working copy in this folder
+cp `find legacy/ -name "wp-static*zip" | xargs ls -t1 | head -n1` ./wp-static-latest.zip
+##mv ../wpyogdiksha-nov2013/wordpress/wp-content/uploads/2015/05/wp-static*.zip ./wp-static-latest.zip
+
 #check if the file is actually there!
 if [ $? -eq 0 ]; then
     echo  ZipFile Move OK
@@ -16,11 +21,10 @@ else
     exit
 fi
 
-#backup old static zips to legacy
-#mv *.zip ./legacy/
-
 # backup last uploaded site
-mv wpyogdiksha-nov2013 wpyogdiksha-nov2013-bkpon-$(date +%Y%m%d_%H%M%S)
+if [ -d "wpyogdiksha-nov2013" ]; then
+    mv wpyogdiksha-nov2013 wpyogdiksha-nov2013-bkpon-$(date +%Y%m%d_%H%M%S)
+fi
 
 #unzip static site
 unzip wp-static-latest.zip
