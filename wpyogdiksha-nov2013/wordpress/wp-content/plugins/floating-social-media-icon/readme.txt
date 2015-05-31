@@ -208,6 +208,12 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 
 == Upgrade Notice ==
 
+= 2.1 =
+* May 30, 2015 | NOTE: Updating Plugin Will Not Change Your Settings/Configuration.. Update With Confidence :)
+* Optimized Codes
+* Performance Improvements
+* Stable Release
+
 = 2.0 =
 * April 18, 2015 | NOTE: Updating Plugin Will Not Change Your Settings/Configuration.. Update With Confidence :)
 * Optimized Codes
@@ -359,6 +365,12 @@ Have more questions ? [Drop a mail](http://www.acurax.com/contact.php/ "Drop an 
 * Fixed Design Icon Clarity
 
 == Changelog ==
+
+= 2.1 =
+* May 30, 2015 | NOTE: Updating Plugin Will Not Change Your Settings/Configuration.. Update With Confidence :)
+* Optimized Codes
+* Performance Improvements
+* Stable Release
 
 = 2.0 =
 * April 18, 2015 | NOTE: Updating Plugin Will Not Change Your Settings/Configuration.. Update With Confidence :)

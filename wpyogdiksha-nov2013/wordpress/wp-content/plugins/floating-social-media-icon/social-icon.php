@@ -374,7 +374,7 @@ Please do a favour by enabling back-link to our site. <a href="admin.php?page=Ac
 <?php if($_GET["status"] == "updated") { ?>
 <div style="display: block; background-color: rgb(255, 255, 224); padding: 10px; border: 1px solid rgb(230, 219, 85); font-family: arial; font-size: 13px; font-weight: bold; text-align: center; border-radius: 10px 10px 10px 10px;">Acurax Floating Social Media Icon Update Successfully Completed - Thank You</div>
 <?php
-$acx_fsmi_si_current_version = "2.0";  // Current Version
+$acx_fsmi_si_current_version = "2.1";  // Current Version
 update_option('acx_fsmi_si_current_version', $acx_fsmi_si_current_version);
 } ?>
 <hr/>

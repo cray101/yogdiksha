@@ -279,7 +279,6 @@ function acx_load_floating_js()
 	If Y Decreases then Move to Down
 	***************************************************************************/
 	// Icon Size 16 Starts Here
-	// acx_si_check_loaded_count($count,$icon_size,$set_x_value,$set_y_value);
 	acx_si_check_loaded_count(1,16,-170,-35);
 	acx_si_check_loaded_count(2,16,-170,-35);
 	acx_si_check_loaded_count(3,16,-170,-35);
@@ -289,7 +288,6 @@ function acx_load_floating_js()
 	acx_si_check_loaded_count(7,16,-170,-35);
 	// *********************************
 	// Icon Size 25 Starts Here
-	// acx_si_check_loaded_count($count,$icon_size,$set_x_value,$set_y_value);
 	acx_si_check_loaded_count(1,25,-160,-50);
 	acx_si_check_loaded_count(2,25,-160,-50);
 	acx_si_check_loaded_count(3,25,-160,-50);
@@ -299,7 +297,6 @@ function acx_load_floating_js()
 	acx_si_check_loaded_count(7,25,-180,-50);
 	// *********************************
 	// Icon Size 32 Starts Here
-	// acx_si_check_loaded_count($count,$icon_size,$set_x_value,$set_y_value);
 	acx_si_check_loaded_count(1,32,-170,-55);
 	acx_si_check_loaded_count(2,32,-170,-55);
 	acx_si_check_loaded_count(3,32,-170,-55);
@@ -309,7 +306,6 @@ function acx_load_floating_js()
 	acx_si_check_loaded_count(7,32,-160,-80);
 	// *********************************
 	// Icon Size 40 Starts Here
-	// acx_si_check_loaded_count($count,$icon_size,$set_x_value,$set_y_value);
 	acx_si_check_loaded_count(1,40,-170,-65);
 	acx_si_check_loaded_count(2,40,-170,-65);
 	acx_si_check_loaded_count(3,40,-170,-65);
@@ -319,7 +315,6 @@ function acx_load_floating_js()
 	acx_si_check_loaded_count(7,40,-170,-145);
 	// *********************************
 	// Icon Size 48 Starts Here
-	// acx_si_check_loaded_count($count,$icon_size,$set_x_value,$set_y_value);
 	acx_si_check_loaded_count(1,48,-170,-75);
 	acx_si_check_loaded_count(2,48,-170,-75);
 	acx_si_check_loaded_count(3,48,-170,-75);
@@ -329,7 +324,6 @@ function acx_load_floating_js()
 	acx_si_check_loaded_count(7,48,-170,-175);
 	// *********************************
 	// Icon Size 55 Starts Here
-	// acx_si_check_loaded_count($count,$icon_size,$set_x_value,$set_y_value);
 	acx_si_check_loaded_count(1,55,-170,-80);
 	acx_si_check_loaded_count(2,55,-170,-80);
 	acx_si_check_loaded_count(3,55,-170,-135);
@@ -612,7 +606,7 @@ function acx_fsmi_si_pluign_finish_version_update()
 		  </div>';
 }
 $acx_fsmi_si_current_version = get_option('acx_fsmi_si_current_version');
-if($acx_fsmi_si_current_version != '2.0') // Current Version
+if($acx_fsmi_si_current_version != '2.1') // Current Version
 {
 if (get_option('social_icon_array_order') != "")
 {
