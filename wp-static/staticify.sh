@@ -43,6 +43,11 @@ if [ $? -eq 0 ]; then
     echo ctrl+C now if you see an error above!
     sleep 10
     s3cmd sync --recursive --acl-public * s3://yogdiksha.com/
+
+    ## To actually remove the deleted files from the bucket, use the line below after removing dry run
+    echo "Following files may need to be deleted"
+    sync --recursive --dry-run --delete-removed --acl-public * s3://yogdiksha.com/
+
     cd ..
 ##remove the static zip, we have a copy in legacy
 rm -f wp-static-latest.zip
